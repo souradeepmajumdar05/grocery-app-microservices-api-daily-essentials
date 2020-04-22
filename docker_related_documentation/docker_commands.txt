@@ -1,0 +1,23 @@
+--Below commands will create various containers for various services
+docker run -p 27017:27017 --name kartmongodb -d mongo
+docker run -p 27027:27017 --name usermongodb -d mongo
+docker run -p3316:3306 --name orderschema -e MYSQL_ROOT_PASSWORD=root -d mysql
+docker run -p3326:3306 --name itemschema -e MYSQL_ROOT_PASSWORD=root -d mysql
+
+--if you want to remove a wrongly created container
+docker rm -f <container_id>
+--eg:
+docker rm -f 001e75091826 351ad0f8b9b4 0e82437a42f2  
+
+--for getting inside a docker container use below command ,
+docker exec -it <container_name> /bin/bash
+--eg:
+docker exec -it usermongodb /bin/bash
+
+--for getting inside mysql cli , run the below command
+mysql -uroot -p
+
+--To find on which ip your docker machine is running in your local run below command
+docker-machine ip default
+192.168.99.100
+

@@ -16,7 +16,7 @@ Item service,Cart service, and order service are all the other services along wi
 
 All the respective API end points namely sigin-in etc.. has been given as part of postman collection in /postman_collections folder
 
-![](images/collections.jpg)
+![](images/collections.PNG)
 
 As part of the infrastructure setup all the databases are in docker.All the relevant function and troubleshootiing docker commands has been included in /docker_related_documentation/ . If running on personal laptop on windows "docker quickstart terminal" is needed follow this link for guidance https://docs.docker.com/toolbox/toolbox_install_windows/ for linux and OSX just get docker and it things can start running. 
 

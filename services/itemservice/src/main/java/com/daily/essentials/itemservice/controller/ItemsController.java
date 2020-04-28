@@ -24,15 +24,6 @@ public class ItemsController {
     }
 
     @CrossOrigin("*")
-    @GetMapping("/anything")
-    @ResponseBody
-    public String getsomething()
-    {
-        return "yo mama";
-    }
-
-
-    @CrossOrigin("*")
     @GetMapping("/items")
     @ResponseBody
     public List<Item> getAllItems() {
